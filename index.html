@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Laudo TDAH Autismo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="text-gray-900">
+    <header
+        class="fixed top-0 left-0 right-0 z-30 bg-[var(--primary)] text-white flex items-center justify-between px-10 h-[var(--nav-height)] border-b border-black/10">
+        <a href="/" class="flex items-center no-underline text-inherit">
+            <div class="flex flex-col leading-none">
+                <span class="font-bold text-2xl mb-[-0.5rem]">Laudo TDAH Autismo</span>
+                <span class="text-sm">Diagnóstico de autismo 100% online</span>
+            </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 font-semibold text-sm" aria-label="menu">
+            <a href="#home" class="px-2 py-2">Início</a>
+            <a href="#funcionamento" class="px-2 py-2">Funcionamento</a>
+            <a href="#sobre-mim" class="px-2 py-2">Sobre mim</a>
+            <a href="#contato" class="px-2 py-2">Contato</a>
+            <a href="#planos" class="px-2 py-2">Planos</a>
+            <a href="#contato" class="
+                    flex 
+                    flex-col 
+                    items-center 
+                    justify-center 
+                    gap-1 
+                    px-6 
+                    py-2 
+                    rounded-md 
+                    text-black 
+                    bg-[#D99A00] 
+                    hover:bg-[var(--secondary)] 
+                    hover:text-white 
+                    font-bold 
+                    transition">
+                <p>REALIZAR TESTE</p>
+            </a>
+        </nav>
+        <button id="hambtn"
+            class="md:hidden flex items-center justify-center w-12 h-12 rounded bg-white border border-black/10"
+            aria-label="Abrir menu">
+            <span
+                class="block w-5 h-0.5 bg-black relative before:content-[''] before:absolute before:-top-1.5 before:w-5 before:h-0.5 before:bg-black after:content-[''] after:absolute after:top-1.5 after:w-5 after:h-0.5 after:bg-black"></span>
+        </button>
+    </header>
+
+    <nav id="mobileMenu"
+        class="hidden absolute top-[var(--nav-height)] left-0 right-0 bg-white border-b border-black/10 shadow-lg md:hidden"
+        aria-hidden="true">
+        <a href="#home" class="block px-5 py-3 font-semibold border-t border-black/5">Início</a>
+        <a href="#como-funciona" class="block px-5 py-3 font-semibold border-t border-black/5">Como funciona</a>
+        <a href="#sobre-mim" class="block px-5 py-3 font-semibold border-t border-black/5">Sobre Mim</a>
+        <a href="#depoimentos" class="block px-5 py-3 font-semibold border-t border-black/5">Depoimentos</a>
+        <a href="#tratamentos" class="block px-5 py-3 font-semibold border-t border-black/5">Tratamentos</a>
+        <a href="#contato" class="block px-5 py-3 font-semibold border-t border-black/5">Contato</a>
+    </nav>
+
+    <section id="home"
+        class="relative flex items-center justify-center px-[10%] pb-[60px] min-h-screen bg-gradient-to-r from-[#FFBF23] via-[#FFD347] to-[#FFE88A] text-white overflow-hidden">
+
+        <div class="flex flex-col md:flex-row items-center justify-between gap-10 max-w-6xl w-full z-10 relative">
+            <div class="flex flex-col gap-2 flex-1 text-center md:text-left">
+                <h1 class="text-[2.5rem] font-semibold text-[var(--secondary)] tracking-[.10em] leading-10">
+                    Descubra se você <br /> tem autismo!
+                </h1>
+                <p class="text-[19px] text-black">
+                    Comece sua jornada de autodescoberta fazendo nosso teste de autismo avançado!
+                    <b>Rápido, seguro e sem julgamentos</b>
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start">
+                    <a href="#"
+                        class="inline-flex gap-2 items-center justify-center bg-[#25D366] text-white px-8 py-3 rounded-md font-bold text-base shadow-md">
+                        <i class="fa-brands fa-whatsapp text-[22px]"></i>
+                        Quero Fechar Meu Diagnóstico de TEA
+                    </a>
+                </div>
+                <div class="flex flex-wrap gap-3 text-black mt-3 justify-center md:justify-start">
+                    <p class="bg-[var(--secondary)] text-white rounded-md font-semibold p-1">
+                        100% Seguro
+                    </p>
+                    <p class="bg-[var(--secondary)] text-white rounded-md font-semibold p-1">
+                        Laudo emitido por neurologista
+                    </p>
+                    <p class="bg-[var(--secondary)] text-white rounded-md font-semibold p-1">
+                        Resultado rápido
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex-1 flex justify-center h-[100vh]">
+                <img src="./public/Adobe Express - file.png" alt="Dr. Tiago Marinho">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="funcionamento" class="flex items-center justify-around min-h-[25vw] bg-[var(--primary)]">
+        <h1 class="text-[35px] font-semibold leading-10">
+            Para quem é esse teste <br /> de autismo?
+        </h1>
+        <div class="flex flex-col w-[40%] gap-3">
+            <p>Nosso teste de autismo é direcionado para adultos e crianças que suspeitam possuir traços do espectro.
+            </p>
+            <p>
+                Nossa metodologia inédita é baseada na Escala de diagnóstico de autismo e Asperger de Ritvo (RAADS-R) e
+                no
+                Modified Checklist for Autism in Toddlers (M-CHAT).
+            </p>
+            <button
+                class="bg-[var(--secondary)] text-white font-semibold p-2 text-[1rem] rounded-md shadow-md hover:bg-[#252525] transition">
+                Realizar Teste
+            </button>
+        </div>
+    </section>
+
+    <section id="funcionamento"
+        class="flex flex-col items-center justify-center min-h-screen px-[10%] py-20 bg-gradient-to-b from-[#fff9e6] via-white to-[#fff9e6]">
+        <h1 class="text-[2.2rem] md:text-[2.5rem] font-bold mb-6 text-[#181818] text-center">
+            Como funciona o processo para obter o diagnóstico de autismo
+        </h1>
+
+        <p class="max-w-3xl text-center text-gray-600 text-lg mb-14">
+            Não é um teste comum de internet! É uma avaliação clínica, analisada por um neurologista especialista em
+            TEA,
+            com credibilidade, sigilo e respaldo científico. O processo é totalmente online e consiste em 3 etapas:
+            questionário, análise técnica e laudo.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-6xl">
+            <!-- Card 1 - Questionário -->
+            <div
+                class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                <div class="w-full h-52 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1581091870632-8a4c3f8e6dfb?auto=format&fit=crop&w=800&q=60"
+                        alt="Questionário"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-6 text-center flex flex-col items-center">
+                    <h3 class="text-xl font-semibold mb-3 text-[#181818]">Questionário</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        A primeira etapa consiste no preenchimento de um questionário com 50 perguntas validadas
+                        pela comunidade científica internacional no diagnóstico do espectro autista.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2 - Análise técnica médica -->
+            <div
+                class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                <div class="w-full h-52 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1603570417039-ef6e43c39f8c?auto=format&fit=crop&w=800&q=60"
+                        alt="Análise técnica médica"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-6 text-center flex flex-col items-center">
+                    <h3 class="text-xl font-semibold mb-3 text-[#181818]">Análise técnica médica</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Na segunda etapa, o Dr. Tiago Marinho (neurologista especialista em TEA) analisa cada item
+                        do questionário, emitindo parecer médico detalhado sobre o comportamento avaliado.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3 - Consulta e laudo final -->
+            <div
+                class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                <div class="w-full h-52 overflow-hidden">
+                    <img src="" alt="Consulta e laudo final"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-6 text-center flex flex-col items-center">
+                    <h3 class="text-xl font-semibold mb-3 text-[#181818]">Consulta e laudo final</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        A última etapa é a teleconsulta com o Dr. Tiago Marinho para confirmação do diagnóstico. Após a
+                        avaliação, você recebe o laudo médico com o resultado e o grau do autismo (se confirmado).
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <button
+            class="mt-12 bg-[var(--secondary)] text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-[#252525] transition-all duration-300">
+            Realizar Teste
+        </button>
+    </section>
+
+    <section id="sobre-mim"
+        class="flex justify-between px-[10%] pt-[120px] pb-[60px] min-h-screen bg-gradient-to-r from-[#FFBF23] via-[#FFD347] to-[#FFE88A]">
+        <div class="flex justify-center">
+            <img src="./public/Dr.-Tiago-79.jpg" alt="Dr. Tiago Marinho"
+                class="w-[25rem] mb-[50px] h-[35rem] rounded-2xl shadow-lg object-cover" />
+        </div>
+        <div class="flex flex-col gap-2">
+            <h3 class="text-[3rem] font-bold mb-[-1rem]">Dr Tiago Marinho</h3>
+            <h4 class="font-semibold">
+                CRM SP: 256758
+            </h4>
+            <p class="w-[45vw]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Error repudiandae iste sed consequuntur soluta deleniti est expedita sapiente,
+                impedit aliquid officiis iure? Et laborum unde deleniti voluptatem quae hic laudantium.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                In aut sapiente quasi culpa error assumenda temporibus
+                distinctio modi provident ipsum eaque quo,
+                doloremque, animi asperiores ut iure recusandae consequuntur cum.
+                <br /> <br />
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Error repudiandae iste sed consequuntur soluta deleniti est expedita sapiente,
+                impedit aliquid officiis iure? Et laborum unde deleniti voluptatem quae hic laudantium.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <ol class="list-decimal list-inside text-lg space-y-2">
+                <li class="flex items-center gap-2">
+                    <i class="fas fa-check-circle"></i>
+                    Atendimento humanizado
+                </li>
+                <li class="flex items-center gap-2">
+                    <i class="fas fa-user-md"></i>
+                    Profissional experiente
+                </li>
+                <li class="flex items-center gap-2">
+                    <i class="fas fa-stethoscope"></i>
+                    Diagnóstico preciso
+                </li>
+            </ol>
+            <a href="#contato"
+                class="inline-flex gap-2 items-center justify-center bg-[var(--primary)] text-white px-8 py-3 rounded-md font-bold text-base shadow-md hover:bg-[var(--tertiary)] transition">
+                Agendar Avaliação
+            </a>
+        </div>
+    </section>
+
+    <section id="funcionamento" class="flex items-center justify-center min-h-[25vw] bg-[#FFD7EF] gap-16">
+        <div class="flex flex-col w-[40%] gap-3 text-gray-800">
+            <h3 class="text-lg font-medium">O QUE VOCÊ RECEBE</h3>
+            <h1 class="text-[2rem] font-semibold">Tenha acesso ao seu laudo de TEA</h1>
+            <p>
+                Após realizar todas as etapas da avaliação, você receberá o laudo de autismo assinado digitalmente
+                pelo Dr. Márcio Pereira (validade nacional).
+            </p>
+            <p>
+                Com esse documento você poderá: confirmar o diagnóstico do espectro autista, conhecer o grau do autismo
+                e iniciar o tratamento multidisciplinar precoce com a guia de solicitação médica.
+            </p>
+        </div>
+
+        <img src="./public/4e7fe1_6386f4c55f1a4414adee4cfb2dd42553~mv2.avif" alt="coracao-autismo"
+            class="w-[40%] max-w-[500px]" />
+    </section>
+
+    <section id="tratamentos" class="min-h-screen bg-[#F1F1F1] pt-12 p-32">
+        <div class="flex justify-center  items-center gap-6 mb-12">
+            <h3 class="text-[3rem] font-bold text-[#0C70F2] leading-none w-[50%]">
+                Como faremos a diferença em suas medidas
+            </h3>
+            <p class="text-[15px] w-[50%]">
+                Você vai entender o porquê não temos resultado, porquê é difícil gerenciar o sobrepeso,
+                onde erramos e onde podemos acertar.
+                O SOBRE MIM é 100% personalizado de acordo com suas taxas metabólicas e seu DNA.
+            </p>
+        </div>
+        <div class="grid grid-cols-3 gap-8">
+            <div
+                class="flex flex-col w-[25vw] h-[30vw] justify-around bg-white p-6 rounded-2xl shadow-md cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+                <div
+                    class="flex h-16 w-16 aspect-square items-center justify-center bg-[--primary] text-white rounded-full">
+                    <i class="fa-solid fa-syringe text-[33px]"></i>
+                </div>
+                <h5 class="text-[--title] font-semibold text-[30px] leading-none">
+                    Intravenosos Personalizados
+                </h5>
+                <p>
+                    Experimente o poder da revitalização com nossos intravenosos projetados para atender às suas
+                    necessidades específicas de saúde
+                </p>
+                <a href="#contato" class="text-[var(--primary)] text-[18px]">
+                    Agende Sua Avalição
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div
+                class="flex flex-col w-[25vw] h-[30vw] justify-around bg-white p-6 rounded-2xl shadow-md cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+                <div
+                    class="flex h-16 w-16 aspect-square items-center justify-center bg-[--primary] text-white rounded-full">
+                    <i class="fa-solid fa-rotate  text-[33px]"></i>
+                </div>
+                <h5 class="text-[--title] font-semibold text-[30px] leading-none">
+                    Acompanhamento 360
+                </h5>
+                <p>
+                    Desfrute de um acompanhamento completo e abrangente que aborda todos os aspectos do seu organismo,
+                    maximizando sua perda de peso
+                </p>
+                <a href="#contato" class="text-[var(--primary)] text-[18px]">
+                    Agende Sua Avalição
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div
+                class="flex flex-col w-[25vw] h-[30vw] justify-around bg-white p-6 rounded-2xl shadow-md cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+                <div
+                    class="flex h-16 w-16 aspect-square items-center justify-center bg-[--primary] text-white rounded-full">
+                    <i class="fa-solid fa-calendar text-[33px]"></i>
+                </div>
+                <h5 class="text-[--title] font-semibold text-[30px] leading-none">
+                    Nutricionista Semanal
+                </h5>
+                <p>
+                    Receba orientação personalizada e apoio contínuo com nossas consultas nutricionais semanais,
+                    ajudando-o a alcançar seus objetivos rapidamente
+                </p>
+                <a href="#contato" class="text-[var(--primary)] text-[18px]">
+                    Agende Sua Avalição
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div
+                class="flex flex-col w-[25vw] h-[30vw] justify-around bg-white p-6 rounded-2xl shadow-md cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+                <div
+                    class="flex h-16 w-16 aspect-square items-center justify-center bg-[--primary] text-white rounded-full">
+                    <i class="fa-solid fa-dna text-[33px]"></i>
+                </div>
+                <h5 class="text-[--title] font-semibold text-[30px] leading-none">
+                    Implantes Hormonais
+                </h5>
+                <p>
+                    Restaurando a harmonia em seu corpo e otimizando sua saúde, ajuste o equilíbrio hormonal que está te
+                    afastando do seu objetivo
+                </p>
+                <a href="#contato" class="text-[var(--primary)] text-[18px]">
+                    Agende Sua Avalição
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div
+                class="flex flex-col w-[25vw] h-[30vw] justify-around bg-white p-6 rounded-2xl shadow-md cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+                <div
+                    class="flex h-16 w-16 aspect-square items-center justify-center bg-[--primary] text-white rounded-full">
+                    <i class="fa-solid fa-capsules text-[33px]"></i>
+                </div>
+                <h5 class="text-[--title] font-semibold text-[30px] leading-none">
+                    Reposição de vitaminas e minerais
+                </h5>
+                <p>
+                    Eleve sua saúde e energia dando ao seu corpo o
+                    impulso que ele precisa para alcançar a melhor versão
+                    de saúde e conforto estético
+                </p>
+                <a href="#contato" class="text-[var(--primary)] text-[18px]">
+                    Agende Sua Avalição
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div
+                class="flex flex-col w-[25vw] h-[30vw] justify-around bg-white p-6 rounded-2xl shadow-md cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+                <div
+                    class="flex h-16 w-16 aspect-square items-center justify-center bg-[--primary] text-white rounded-full">
+                    <i class="fa-solid fa-apple-whole text-[33px]"></i>
+                </div>
+                <h5 class="text-[--title] font-semibold text-[30px] leading-none">
+                    Programas de emagrecimento
+                </h5>
+                <p>
+                    Alcançar seu peso ideal pode ser um desafio, mas com nossos programas personalizados, você terá o
+                    suporte e orientação necessários para
+                    transformar seu corpo
+                </p>
+                <a href="#contato" class="text-[var(--primary)] text-[18px]">
+                    Agende Sua Avalição
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="perguntas" class="min-h-screen flex items-center justify-center bg-gray-50 py-20">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+            <!-- Imagem lateral -->
+            <div class="flex justify-center">
+                <img src="foto-medico.jpg" alt="Dr. Tiago Marinho"
+                    class="w-80 h-auto rounded-2xl shadow-lg object-cover">
+            </div>
+
+            <!-- Conteúdo FAQ -->
+            <div class="w-full max-w-2xl">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-center md:text-left mb-2 text-[--title]">
+                    Perguntas Frequentes
+                </h2>
+                <p class="mb-2">
+                    Dr. Tiago Marinho é referência nacional em tratamento para a obesidade e sobrepeso.
+                    Confira aqui as principais dúvidas.
+                </p>
+                <div class="space-y-4">
+                    <!-- Item 1 -->
+                    <details class="group bg-white rounded-2xl p-6 shadow-md" open>
+                        <summary class="flex items-center justify-between cursor-pointer list-none">
+                            <span class="w-[35vw]text-lg md:text-xl font-semibold text-[--title]">
+                                O que é o tratamento oferecido?
+                            </span>
+                            <svg class="w-6 h-6 text-[--title] transform transition-transform duration-200 group-open:rotate-45"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </summary>
+                        <div class="mt-4 text-base leading-relaxed text-gray-600">
+                            <p>
+                                Trata-se de um acompanhamento nutricional e médico individualizado com foco em
+                                emagrecimento saudável,
+                                reeducação alimentar e otimização metabólica, baseado em evidências científicas.
+                            </p>
+                        </div>
+                    </details>
+
+                    <!-- Item 2 -->
+                    <details class="group bg-white rounded-2xl p-6 shadow-md">
+                        <summary class="flex items-center justify-between cursor-pointer list-none">
+                            <span class="w-[35vw]text-lg md:text-xl font-semibold text-[--title]">
+                                Como agendo uma consulta?
+                            </span>
+                            <svg class="w-6 h-6 text-[--title] transform transition-transform duration-200 group-open:rotate-45"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </summary>
+                        <div class="mt-4 text-base leading-relaxed text-gray-600">
+                            <p>
+                                O agendamento é feito pelo telefone/WhatsApp disponível no site ou pelo formulário de
+                                contato.
+                                Após o agendamento, você recebe orientações pré-consulta.
+                            </p>
+                        </div>
+                    </details>
+
+                    <!-- Item 3 -->
+                    <details class="group bg-white rounded-2xl p-6 shadow-md">
+                        <summary class="flex items-center justify-between cursor-pointer list-none">
+                            <span class="w-[35vw]text-lg md:text-xl font-semibold text-[--title]">
+                                Preciso fazer exames antes da consulta?
+                            </span>
+                            <svg class="w-6 h-6 text-[--title] transform transition-transform duration-200 group-open:rotate-45"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </summary>
+                        <div class="mt-4 text-base leading-relaxed text-gray-600">
+                            <p>
+                                Se você já tiver exames recentes, traga-os. Caso não tenha, a primeira consulta pode
+                                incluir
+                                solicitação de exames laboratoriais para avaliação completa.
+                            </p>
+                        </div>
+                    </details>
+
+                    <!-- Item 4 -->
+                    <details class="group bg-white rounded-2xl p-6 shadow-md">
+                        <summary class="flex items-center justify-between cursor-pointer list-none">
+                            <span class="w-[35vw]text-lg md:text-xl font-semibold text-[--title]">
+                                Que resultados posso esperar?
+                            </span>
+                            <svg class="w-6 h-6 text-[--title] transform transition-transform duration-200 group-open:rotate-45"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </summary>
+                        <div class="mt-4 text-base leading-relaxed text-gray-600">
+                            <p>
+                                Resultados variam conforme o caso e adesão às orientações.
+                                O objetivo é perda de peso sustentável, melhora de marcadores metabólicos e qualidade de
+                                vida.
+                            </p>
+                        </div>
+                    </details>
+
+                    <!-- Item 5 -->
+                    <details class="group bg-white rounded-2xl p-6 shadow-md">
+                        <summary class="flex items-center justify-between cursor-pointer list-none">
+                            <span class="w-[35vw]text-lg md:text-xl font-semibold text-[--title]">
+                                Atende por teleconsulta?
+                            </span>
+                            <svg class="w-6 h-6 text-[--title] transform transition-transform duration-200 group-open:rotate-45"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </summary>
+                        <div class="mt-4 text-base leading-relaxed text-gray-600">
+                            <p>
+                                Sim. Há opção de teleconsulta para pacientes que preferem atendimento remoto.
+                                Verifique disponibilidade no agendamento.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+                <p class="text-[15px] leading-none mt-2 text-center font-medium text-gray-500">
+                    Caso sua dúvida não esteja aqui, entre em contato conosco através do formulário ou WhatsApp.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="min-h-screen bg-white flex items-center justify-center">
+        <div class="w-full max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h3 class="text-4xl font-bold text-[var(--primary)] mb-4">Agende sua consulta</h3>
+                <p class="mb-6 text-gray-600">
+                    Entre em contato e agende sua avaliação para começar sua transformação com o Dr. Tiago Marinho.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-[var(--primary)]"></i>
+                        <span>(85) 9 1234-5678</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-[var(--primary)]"></i>
+                        <span>contato@drtiagomarinho.com.br</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-location-dot text-[var(--primary)]"></i>
+                        <span>Av. Exemplo, 123 - Fortaleza, CE</span>
+                    </li>
+                </ul>
+            </div>
+            <form action="#" class="bg-gray-100 p-6 rounded-lg shadow-md space-y-4">
+                <div>
+                    <label for="nome" class="block text-sm font-medium">Nome</label>
+                    <input type="text" id="nome" class="w-full p-2 rounded border border-gray-300">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium">Whatsapp</label>
+                    <input type="email" id="email" class="w-full p-2 rounded border border-gray-300">
+                </div>
+                <div>
+                    <label for="mensagem" class="block text-sm font-medium">Mensagem</label>
+                    <textarea id="mensagem" rows="4" class="w-full p-2 rounded border border-gray-300"></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full bg-[var(--primary)] text-white font-semibold py-2 rounded hover:bg-blue-700 transition">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer" class="relative min-h-[40vh] bg-[var(--primary)]">
+        <div class="flex flex-col gap-5 pt-[2.5rem] w-full justify-center items-center">
+            <h4 class="text-white text-center font-bold text-[3rem] leading-none">
+                Pronto(a) para sua melhor versão? <br />
+                Agende sua avaliação
+                <span class="relative z-10 text-[#13F2DC]">agora mesmo!</span>
+            </h4>
+            <div class="flex gap-3">
+                <button class="bg-blue-900 text-white px-12 py-3 rounded-full font-bold">
+                    AGENDAR AVALIAÇÃO
+                </button>
+                <a href="#"
+                    class="inline-flex gap-2 items-center justify-center bg-[#25D366] text-white px-8 py-3 rounded-full font-bold text-base shadow-md hover:bg-[#128C7E] transition">
+                    ENVIAR MENSAGEM <i class="fa-brands fa-whatsapp text-[22px]"></i>
+                </a>
+            </div>
+        </div>
+        <div
+            class="flex text-[14px] justify-around text-center items-center p-4 absolute bottom-0 w-full bg-black text-white">
+            <p><i class="fas fa-user-md mr-2"></i>Dr. Tiago Marinho | Nutrologia Avançada</p>
+            <p><i class="fab fa-instagram mr-2"></i>@drtiagomarinho</p>
+            <p><i class="fas fa-phone-alt mr-2"></i>(85) 9 1234-5678</p>
+            <p><i class="far fa-copyright mr-2"></i>Todos os direitos reservados - 2025</p>
+        </div>
+
+    </footer>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
